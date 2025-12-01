@@ -19,3 +19,9 @@ CREATE TABLE QGames (
     beginDate DATE,
     endDate DATE
 );
+
+CREATE TABLE Positions (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(10),
+    description TEXT
+);
