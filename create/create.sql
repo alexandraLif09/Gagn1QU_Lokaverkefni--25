@@ -25,3 +25,9 @@ CREATE TABLE Positions (
     name VARCHAR(10),
     description TEXT
 );
+
+CREATE TABLE Woods (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    description TEXT
+);
