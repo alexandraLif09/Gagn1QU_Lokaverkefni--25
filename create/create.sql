@@ -56,3 +56,21 @@ CREATE TABLE Professors (
         REFERENCES Houses(id)
         ON DELETE CASCADE
 );
+
+CREATE TABLE QPlayers (
+    id SERIAL PRIMARY KEY,
+    student_id INTEGER NOT NULL,
+    position_id INTEGER,
+    beginDate DATE NOT NULL,
+    endDate DATE,
+
+    CONSTRAINT fk_Student
+        FOREIGN KEY(student_id)
+        REFERENCES Students(id)
+        ON DELETE CASCADE
+    
+    CONSTRAINT fk_position
+        FOREIGN KEY(position_id)
+        REFERENCES Positions(id)
+        ON DELETE CASCADE
+);
