@@ -47,3 +47,12 @@ CREATE TABLE Students (
         REFERENCES Houses(id)
         ON DELETE CASCADE
 );
+
+CREATE TABLE Professors (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    CONSTRAINT fk_House
+        FOREIGN KEY(Houses_id)
+        REFERENCES Houses(id)
+        ON DELETE CASCADE
+);
