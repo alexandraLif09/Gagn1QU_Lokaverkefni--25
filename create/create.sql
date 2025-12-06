@@ -94,3 +94,20 @@ CREATE TABLE Wands (
         REFERENCES cores(id)
         ON DELETE CASCADE
 );
+
+CREATE TABLE Professor_wand (
+    professor_id INTEGER NOT NULL,
+    wand_id INTEGER NOT NULL, 
+
+    CONSTRAINT fk_professor
+        FOREIGN KEY(professor_id)
+        REFERENCES Professors(id)
+        ON DELETE CASCADE,
+    
+    CONSTRAINT fk_wand
+        FOREIGN KEY(wand_id)
+        REFERENCES Wands(id)
+        ON DELETE CASCADE
+
+    PRIMARY KEY(professor_id, wand_id)
+);
