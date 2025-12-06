@@ -74,3 +74,19 @@ CREATE TABLE QPlayers (
         REFERENCES Positions(id)
         ON DELETE CASCADE
 );
+
+CREATE TABLE Wands (
+    id SERIAL PRIMARY KEY,
+    wood_id INTEGER NOT NULL,
+    core_id INTEGER NOT NULL,
+
+    CONSTRAINT fk_wood
+        FOREIGN KEY (wood_id)
+        REFERENCES Woods(id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_core
+        FOREIGN KEY (core_id)
+        REFERENCES cores(id)
+        ON DELETE CASCADE
+);
