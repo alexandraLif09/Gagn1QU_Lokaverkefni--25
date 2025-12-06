@@ -67,7 +67,7 @@ CREATE TABLE QPlayers (
     CONSTRAINT fk_Student
         FOREIGN KEY(student_id)
         REFERENCES Students(id)
-        ON DELETE CASCADE
+        ON DELETE CASCADE,
     
     CONSTRAINT fk_position
         FOREIGN KEY(position_id)
