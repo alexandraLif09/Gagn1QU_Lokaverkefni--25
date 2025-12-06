@@ -111,3 +111,20 @@ CREATE TABLE Professor_wand (
 
     PRIMARY KEY(professor_id, wand_id)
 );
+
+CREATE TABLE Pofessor_course (
+    professor_id INTEGER NOT NULL,
+    course_id INTEGER NOT NULL,
+
+    CONSTRAINT fk_professor
+        FOREIGN KEY(professor_id)
+        REFERENCES Professors(id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_course
+        FOREIGN KEY(course_id)
+        REFERENCES Courses(id)
+        ON DELETE CASCADE,
+    
+    PRIMARY KEY(professor_id, course_id)
+);
