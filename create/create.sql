@@ -107,7 +107,7 @@ CREATE TABLE Professor_wand (
     CONSTRAINT fk_wand
         FOREIGN KEY(wand_id)
         REFERENCES Wands(id)
-        ON DELETE CASCADE
+        ON DELETE CASCADE,
 
     PRIMARY KEY(professor_id, wand_id)
 );
