@@ -179,3 +179,20 @@ CREATE TABLE QGame_house (
     
     PRIMARY KEY(qgame_id, house_id)
 );
+
+CREATE TABLE QGame_qplayer (
+    qgame_id INTEGER NOT NULL,
+    qplayer_id INTEGER NOT NULL,
+
+    CONSTRAINT fk_qgame
+        FOREIGN KEY(qgames_id)
+        REFERENCES QGames(id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_qplayer
+        FOREIGN KEY(qplayer_id)
+        REFERENCES QPlayers(id)
+        ON DELETE CASCADE,
+    
+    PRIMARY KEY(qgame_id, qplayer_id)
+);
