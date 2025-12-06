@@ -162,3 +162,20 @@ CREATE TABLE Student_course (
     
     PRIMARY KEY(student_id, course_id)
 );
+
+CREATE TABLE QGame_house (
+    qgame_id INTEGER NOT NULL,
+    house_id INTEGER NOT NULL,
+
+    CONSTRAINT fk_qgame
+        FOREIGN KEY(qgame_id)
+        REFERENCES QGames(id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_house
+        FOREIGN KEY(house_id)
+        REFERENCES Houses(id)
+        ON DELETE CASCADE,
+    
+    PRIMARY KEY(qgame_id, house_id)
+);
