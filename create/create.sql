@@ -145,3 +145,20 @@ CREATE TABLE Student_wand (
 
     PRIMARY KEY(student_id, wand_id)
 );
+
+CREATE TABLE Student_course (
+    student_id INTEGER NOT NULL,
+    course_id INTEGER NOT NULL,
+
+    CONSTRAINT fk_student
+        FOREIGN KEY(student_id)
+        REFERENCES Students(id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_course
+        FOREIGN KEY(course_id)
+        REFERENCES Courses(id)
+        ON DELETE CASCADE,
+    
+    PRIMARY KEY(student_id, course_id)
+);
