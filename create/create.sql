@@ -47,7 +47,7 @@ CREATE TABLE Students (
     CONSTRAINT fk_House
         FOREIGN KEY(house_id)
         REFERENCES Houses(id)
-        ON DELETE CASCADE
+        ON DELETE RESTRICT
 );
 
 CREATE TABLE Professors (
