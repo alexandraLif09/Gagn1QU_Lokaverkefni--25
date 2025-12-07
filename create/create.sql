@@ -56,7 +56,7 @@ CREATE TABLE Professors (
     house_id INTEGER,
 
     CONSTRAINT fk_House
-        FOREIGN KEY(House_id)
+        FOREIGN KEY(house_id)
         REFERENCES Houses(id)
         ON DELETE CASCADE
 );
