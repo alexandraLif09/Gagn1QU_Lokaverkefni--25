@@ -87,12 +87,12 @@ CREATE TABLE Wands (
     CONSTRAINT fk_wood
         FOREIGN KEY (wood_id)
         REFERENCES Woods(id)
-        ON DELETE CASCADE,
+        ON DELETE RESTRICT,
 
     CONSTRAINT fk_core
         FOREIGN KEY (core_id)
         REFERENCES cores(id)
-        ON DELETE CASCADE
+        ON DELETE RESTRICT
 );
 
 CREATE TABLE Professor_wand (
