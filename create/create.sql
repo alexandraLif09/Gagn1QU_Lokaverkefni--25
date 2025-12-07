@@ -112,7 +112,7 @@ CREATE TABLE Professor_wand (
     PRIMARY KEY(professor_id, wand_id)
 );
 
-CREATE TABLE Pofessor_course (
+CREATE TABLE Professor_course (
     professor_id INTEGER NOT NULL,
     course_id INTEGER NOT NULL,
 
