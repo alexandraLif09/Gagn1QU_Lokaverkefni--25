@@ -42,10 +42,10 @@ CREATE TABLE Students (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     year INTEGER,
-    student_id INTEGER,
+    house_id INTEGER,
 
     CONSTRAINT fk_House
-        FOREIGN KEY(House_id)
+        FOREIGN KEY(house_id)
         REFERENCES Houses(id)
         ON DELETE CASCADE
 );
