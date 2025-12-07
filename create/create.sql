@@ -42,7 +42,7 @@ CREATE TABLE Students (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     year INTEGER,
-    house_id INTEGER,
+    house_id INTEGER NOT NULL,
 
     CONSTRAINT fk_House
         FOREIGN KEY(house_id)
@@ -53,7 +53,7 @@ CREATE TABLE Students (
 CREATE TABLE Professors (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    house_id INTEGER,
+    house_id INTEGER NOT NULL,
 
     CONSTRAINT fk_House
         FOREIGN KEY(house_id)
