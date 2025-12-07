@@ -185,7 +185,7 @@ CREATE TABLE QGame_qplayer (
     qplayer_id INTEGER NOT NULL,
 
     CONSTRAINT fk_qgame
-        FOREIGN KEY(qgames_id)
+        FOREIGN KEY(qgame_id)
         REFERENCES QGames(id)
         ON DELETE CASCADE,
 
