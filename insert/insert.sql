@@ -143,3 +143,26 @@ VALUES ('Acacia', 'An acacia wand seeks a discreat, perceptive, and skilled owne
          symbolizing immense power that can be used for both noble and nefarious purposes.
          It is a rare, powerful, and fearsome wood, known for endowing its owner with the power of life and death
          and it never chooses a mediocre or timid owner.');
+
+INSERT INTO Cores (name, description)
+VALUES ('Dragon heartstring', 'A Dragon heartstring core produces wands with the most magical power and
+         a flair for dramatic, flamboyant spells.'),
+        ('Phoenix feather', 'A Phoenix feather core is the rarest type, capable of the greatest range of magic
+         and is the hardest to tame. It is highly selective in choosing an owner, symbolizing qualities of rebirth,
+         destiny and resilience and often acts on its own initiative.'),
+        ('Unicorn tail hair', 'An Unicorn tail hair core produces the most consistent and faithful magic,
+         is the most difficult to turn to the Dark Arts, but is not the most powerful of wands and
+         is prone to "melancholy" if mishandled.'),
+        ('Veela hair', 'A Veela hair core is incredibly temperamental and linked to the alluring,
+         yet fiery, nature of the Veela themselves.'),
+        ('Thestral tail hair', 'A Thestral tail hair core is an unstable, extremely powerful
+         and notoriously tricky substance to master, suitable only for a witch or wizard who is capable
+         of accepting and understanding death.'),
+        ('Basilisk horn', 'A Basilisk horn core is a rare, powerful
+         and potentially dark wand core that is exceptionally potent in all forms of magic,
+         especially hexes, jinxes, curses and petrification spells.'),
+        ('Fairy wing', 'A Fairy wing core produces a light, airy and delicate wand that excels in Charms and Divination.
+         Wands with this core are highly attuned to mystical connections and the ethereal,
+         often choosing owners who possess "the Sight" (the ability to be a Seer).'),
+        ('Shell', 'A Shell core is an unconventional wand core but its specific properties vary depending on the type of shell used,
+         but generally involve traits like speed, resilience or a strong connection to the owners inner character.');
