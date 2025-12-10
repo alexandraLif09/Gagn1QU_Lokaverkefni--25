@@ -37,5 +37,5 @@ VALUES ('Transfiguration', 'A subject where students learn to change objects for
         ('Magical theory', 'A subject where students learn the why and how of magic, covering spell development, 
         the science behind charms, magical laws, spell classification and the nature of magical energy.');
 
-INSERT INTO QGames (score, winner, beginDate, endDate)
-VALUES ('')
+INSERT INTO QGames (score1, score2, winner, beginDate, endDate)
+VALUES (570, 580, 'Slytherin', )
