@@ -253,7 +253,6 @@ VALUES ('Professor Albus Dumbledore', 1),
         ('Professor Amycus Carrow', 2),
         ('Professor Aurora Sinistra', 3),
         ('Professor Charity Burbage', 4),
-        ('Professor Charity Burbage', 4),
         ('Professor Septima Vector', 3),
         ('Madam Rolanda Hooch', 4);
 
