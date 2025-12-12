@@ -52,7 +52,7 @@ VALUES (570, 580, 'Slytherin', '1966-11-05', '1966-11-06'),
 INSERT INTO Positions (name, description)
 VALUES ('Chasers', 'The Chasers carry a large red ball called a Quaffle and throw it through
          one of the opponents hoops to score 10 points.'),
-        ('Keepers', 'The Keeper guards the three hoops at their end of the pitch, 
+        ('Keeper', 'The Keeper guards the three hoops at their end of the pitch, 
          similar to a soccer goalie, to block Chasers from scoring.'),
         ('Beaters', 'The beaters use bats to hit black balls that fly around
          trying to knock players off called iron Bludgers away from their teammates and towards the other team.'),
