@@ -37,17 +37,17 @@ VALUES ('Transfiguration', 'A subject where students learn to change objects for
         ('Magical theory', 'A subject where students learn the why and how of magic, covering spell development, 
          the science behind charms, magical laws, spell classification and the nature of magical energy.');
 
-INSERT INTO QGames (score, score2, winner, beginDate, endDate)
-VALUES (570, 580, 'Slytherin', '1966-11-05', '1966-11-06'),
-        (170, 60, 'Gryffindor', '1991-11-12', '1991-11-13'),
-        (180, 20, 'Gryffindor', '1992-03-14', '1992-03-15'),
-        (150, 50, 'Hufflepuff', '1994-03-05', '1994-03-06'),
-        (230, 30, 'Gryffindor', '1994-05-07', '1994-05-08'),
-        (230, 20, 'Gryffindor', '1993-11-13', '1993-11-14'),
-        (240, 230, 'Hufflepuff', '1996-03-14', '1996-03-15'),
-        (400, 150, 'Gryffindor', '1996-11-05', '1996-11-06'),
-        (320, 60, 'Hufflepuff', '1997-03-05', '1997-03-06'),
-        (450, 140, 'Gryffindor', '1996-05-18', '1996-05-19');
+INSERT INTO QGames (score, winner, beginDate, endDate, score2)
+VALUES (580, 'Slytherin', '1966-11-05', '1966-11-06', 570),
+        (170, 'Gryffindor', '1991-11-12', '1991-11-13', 60),
+        (180, 'Gryffindor', '1992-03-14', '1992-03-15', 20),
+        (150, 'Hufflepuff', '1994-03-05', '1994-03-06', 50),
+        (230, 'Gryffindor', '1994-05-07', '1994-05-08', 30),
+        (230, 'Gryffindor', '1993-11-13', '1993-11-14', 20),
+        (240, 'Hufflepuff', '1996-03-14', '1996-03-15', 230),
+        (400, 'Gryffindor', '1996-11-05', '1996-11-06', 150),
+        (320, 'Hufflepuff', '1997-03-05', '1997-03-06', 60),
+        (450, 'Gryffindor', '1996-05-18', '1996-05-19', 140);
 
 INSERT INTO Positions (name, description)
 VALUES ('Chasers', 'The Chasers carry a large red ball called a Quaffle and throw it through
