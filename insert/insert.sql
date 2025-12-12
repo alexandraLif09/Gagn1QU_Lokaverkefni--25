@@ -258,7 +258,7 @@ VALUES ('Professor Albus Dumbledore', 1),
 
 INSERT INTO QPlayers (student_id, position_id, beginDate, endDate)
 VALUES (1, 4, 1991, 1997),
-        (3, 2, 199, 1997),
+        (3, 2, 1995, 1997),
         (5, 4, 1992, 1997),
         (6, 4, 1995, 1996),
         (6, 1, 1996, 1998),
