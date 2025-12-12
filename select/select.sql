@@ -30,3 +30,10 @@ SELECT pr.name AS professor, co.name AS course
 FROM Professor_course pc 
 JOIN Professors pr ON pc.professor_id = pr.id
 JOIN Courses co ON pc.course_id = co.id;
+
+SELECT s.name 
+FROM Students s 
+JOIN Student_wand sw ON s.id = sw.student_id
+JOIN Wands w ON sw.wand_id = w.id 
+JOIN woods wd ON w.wood_id = wd.id
+WHERE wd.name = 'Ash';
