@@ -37,7 +37,7 @@ VALUES ('Transfiguration', 'A subject where students learn to change objects for
         ('Magical theory', 'A subject where students learn the why and how of magic, covering spell development, 
          the science behind charms, magical laws, spell classification and the nature of magical energy.');
 
-INSERT INTO QGames (score1, score2, winner, beginDate, endDate)
+INSERT INTO QGames (score, score2, winner, beginDate, endDate)
 VALUES (570, 580, 'Slytherin', '1966-11-05', '1966-11-06'),
         (170, 60, 'Gryffindor', '1991-11-12', '1991-11-13'),
         (180, 20, 'Gryffindor', '1992-03-14', '1992-03-15'),
