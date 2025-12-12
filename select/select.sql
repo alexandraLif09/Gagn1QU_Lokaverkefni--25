@@ -18,3 +18,10 @@ FROM QPlayers qp
 JOIN Students st ON qp.student_id = st.id
 JOIN Positions pos ON qp.position_id = pos.id
 WHERE qp.position_id = '4';
+
+SELECT s.name
+FROM Students s 
+JOIN QPlayers qp ON s.id = qp.student_id
+JOIN Student_course sc ON s.id = sc.student_id
+JOIN Courses c ON sc.course_id = c.id
+WHERE c.name = 'Potions';
