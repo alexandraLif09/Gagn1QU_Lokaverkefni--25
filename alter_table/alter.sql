@@ -1,0 +1,2 @@
+ALTER TABLE QGames
+ADD score2 INTEGER;
