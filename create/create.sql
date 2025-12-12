@@ -14,8 +14,7 @@ CREATE TABLE Courses (
 
 CREATE TABLE QGames (
     id SERIAL PRIMARY KEY,
-    score1 INTEGER,
-    score2 INTEGER,
+    score INTEGER,
     winner VARCHAR(10),
     beginDate DATE,
     endDate DATE
